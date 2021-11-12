@@ -16,3 +16,7 @@
 * We can just create a method inside the parent component itself and we can just call it from the child component and do all that updation necessary stuff 
 * As Version 16.3 introduces a new context API, so by usinf Context API we can create menthod and will behave as a contet provider. With the help of context provider different component of the Application can communicate with each other seemlessly.
 * In React v16.8+, we can take advantage of `useState()` that will help to  update the parent state by using function state and then pass it on to child as a prop attribute.
+
+>## 4. Give 2 ways to prevent components from re-rendering.
+* Convert the component to a class if it is a Pure component and prevent the re-render in shouldComponentUpdate() by returning false.
+* By Using React.memo (HOC) will help to validate the rendering only if props change.
